@@ -418,6 +418,8 @@ Checkout Form
   gap: 0.4rem;  /* space between radio circle and text */
   font-size: 0.9rem; 
   color: #333; 
+  min-width: 4rem; /*ensure Yes/No have enough room in safari*/
+  white-space: nowrap; /*prevents text from breaking*/
 }
 /*-------------------------------------------------------
 Dogs section
