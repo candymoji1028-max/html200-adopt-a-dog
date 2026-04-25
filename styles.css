@@ -418,11 +418,8 @@ Checkout Form
   gap: 0.4rem;  /* space between radio circle and text */
   font-size: 0.9rem; 
   color: #333; 
-  width: 100%; /*fixes the misalignment*/
 }
-.radio-group input[type="radio"] {
-  margin: 0; /*remove Safari's default left indent */
-}
+
 /*-------------------------------------------------------
 Dogs section
 --------------------------------------------------------*/
@@ -584,6 +581,12 @@ Adjust the main content and header for mobile max-width: 767px
     flex-direction: column;
     align-items: flex-start;
     gap: 1rem;
+  }
+  .radio-group input[type="radio"] {
+  margin: 0; /*remove Safari's hidden indent */
+  }
+  .radio-group label {
+  width: 100%; /* aligns Yes and No */
   }
   .checkout-form {
     max-width: 100%;
