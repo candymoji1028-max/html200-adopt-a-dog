@@ -417,7 +417,8 @@ Checkout Form
   align-items: center;
   gap: 0.4rem;  /* space between radio circle and text */
   font-size: 0.9rem; 
-  color: #333; 
+  color: #333;
+  width: auto; /*prevents stretching on Edge*/ 
 }
 
 /*-------------------------------------------------------
@@ -586,7 +587,8 @@ Adjust the main content and header for mobile max-width: 767px
   margin: 0; /*remove Safari's hidden indent */
   }
   .radio-group label {
-  width: 100%; /* aligns Yes and No */
+  width: auto; /* prevents text from jumping to right edge */
+  justify-content: flex-start;/* keeps radio + text together*/
   }
   .checkout-form {
     max-width: 100%;
