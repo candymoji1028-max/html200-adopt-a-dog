@@ -583,15 +583,18 @@ Adjust the main content and header for mobile max-width: 767px
     align-items: flex-start;
     gap: 1rem;
   }
+  .form-row .radio-group {
+  align-items: flex-start;/* ensure group aligns left */
+  }
   .radio-group input[type="radio"] {
   margin: 0; /*remove Safari's hidden indent */
   padding: 0;
   }
-  .radio-group label {
+  .form-row .radio-group label {
   width: auto; /* prevents text from jumping to right edge */
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
+  align-items: center;/* override Safari baseline shift */
   justify-content: flex-start;/* keeps radio + text together*/
   gap:0.4rem;
   }
