@@ -33,7 +33,8 @@ Repository Contents:
 - blog.html  
 - checkout.html  
 - styles.css  
-- testing.txt (user personas + testing documentation)  
+- UserPersona.txt
+- Testing.txt 
 - README.md  
 
 Live Site (GitHub Pages):  
