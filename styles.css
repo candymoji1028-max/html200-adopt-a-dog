@@ -585,6 +585,8 @@ Adjust the main content and header for mobile max-width: 767px
   }
   .radio-group input[type="radio"] {
   margin: 0; /*remove Safari's hidden indent */
+  padding: 0;
+  transform: translateX(-2px);/*Safari-only visual correction*/
   }
   .radio-group label {
   width: auto; /* prevents text from jumping to right edge */
