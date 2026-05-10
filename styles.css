@@ -609,6 +609,19 @@ Adjust the main content and header for mobile max-width: 767px
     width: 100px;/* make imgage bigger on mobile*/  
     height: 100px;
   }
+
+  /*contact form*/
+  .contact-container {
+    padding: 15px;
+  }
+
+  .contact-form {
+    padding: 20px;
+  }
+
+  .contact-form textarea {
+    height: 140px;
+  }
 }
 /*--------------------------------------------------------------------------
 Adjust for iPad breakpoint at 767 px and above
@@ -677,6 +690,20 @@ Adjust for iPad breakpoint at 767 px and above
   #pickup {
     width: 100%;
   }
+
+  /*contact form*/
+  .contact-container {
+    max-width: 700px;
+    padding: 40px;
+  }
+
+  .contact-form {
+    padding: 40px;
+  }
+
+  .contact-form textarea {
+    height: 200px; 
+  }
 }
 /*-----------------------------------------------
 Accessibility features
@@ -694,5 +721,67 @@ figure:focus {
   border-bottom: 3px solid #52B2BF
 }
 
+/*------------------------------------------------
+Contact page style
+--------------------------------------------------*/
 
+/*center the whole form*/
+.contact-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
 
+/*form box*/
+.contact-form {
+  background-color: #f1c3d4;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/*labels*/
+.contact-form label {
+  display: block;
+  text-align: left;
+  margin-top: 15px;
+  font-weight: bold;
+  color: #444;
+}
+
+/*input, selects, textarea*/
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-top: 5px;
+  border: 2px solid #ffd6e7;
+  border-radius: 10px;
+  font-size: 1rem;
+}
+
+/*message box*/
+.contact-form textarea {
+  height: 150px;
+  resize: vertical;
+  margin-bottom: 20px;
+}
+
+/*button*/
+.contact-form button {
+  margin-top: 30px;
+  background-color: #ff8fb1;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/*button hover*/
+.contact-form button:hover {
+  background-color: #ff6f98;
+}
