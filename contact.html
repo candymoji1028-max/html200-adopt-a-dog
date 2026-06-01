@@ -39,7 +39,7 @@
         <section class="contact-container">
           <h1>Contact</h1>
 
-          <form class="contact-form">
+          <form id="contact-form" class="contact-form" novalidate> <!--add novalidate to let JavaScript handle the validation-->
             
             <label for="name">Name:</label>
             <input id="name" type="text" required>
@@ -85,5 +85,6 @@
         </nav>
         <p class="footer-copyright"> &copy; 2018 Adoptadog,LLC  |  Seattle, WA</p>
       </footer>
+      <script src="contact.js" charset="utf-8"></script>
   </body>
 </html>
